@@ -4,5 +4,15 @@ import * as THREE from 'three'
 
 console.log("Hello from index.js!");
 
-const camera = new Camera()
-console.log(camera.instance)
+camera = new Camera()
+console.log(camera)
+
+export default class App{
+
+    constructor() {
+        this.scene = new THREE.Scene();
+        this.camera = new Camera()
+        console.log(this.camera)
+    }
+}
+
